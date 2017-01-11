@@ -1,0 +1,145 @@
+/*  Containers  */
+
+/*html,
+body {
+    width: 100%;
+    height: 100%;
+}
+*/
+.wrapper1 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 80;
+}
+
+
+/*  Animation Elements  */
+
+.load {
+    border-top: 10px solid #20B886;
+    width: 125px;
+    margin: auto;
+}
+
+.spin {
+    animation-name: spin;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 99;
+    overflow: hidden;
+}
+
+.grow {
+    animation-name: grow;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.up {
+    height: 50%;
+    width: 100%;
+    background-color: #3B4257;
+    position: absolute;
+    top: 0;
+    z-index: 77;
+}
+
+.down {
+    height: 50%;
+    width: 100%;
+    background-color: #3B4257;
+    position: absolute;
+    bottom: 0;
+    z-index: 77;
+}
+
+.slideUp {
+    animation-name: slideUp;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-delay: 1.5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.slideDown {
+    animation-name: slideDown;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-delay: 1.5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+
+/*  Keyframe Animations  */
+
+@keyframes grow {
+    0% {
+        width: 125px;
+    }
+    50% {
+        width: 100%;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        width: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(360deg);
+    }
+    40% {
+        transform: rotate(720deg);
+    }
+    60% {
+        transform: rotate(1080deg);
+    }
+    80% {
+        transform: rotate(1440deg);
+    }
+    100% {
+        transform: rotate(1800deg);
+    }
+}
