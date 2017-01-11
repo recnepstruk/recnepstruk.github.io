@@ -18,120 +18,121 @@
 </head>
 
 <body onload="document.getElementById('loading').style.display = 'none';document.getElementById('content').style.display = 'block';">
-    <div id="loading">Loading!</div>
-    <div class="wrapper1">
-        <div class="up slideUp"></div>
-        <div class="spin">
-            <div class="load grow"></div>
-        </div>
-        <div id="content" style="display:none;"></div>
-        <div class="intro">
-            <div id="mainTitle">Kurt Spencer
-                <br>
-                <span id="js-rotating" class="morphext animated infinite">Developer, Full Stack, Photographer, Web Designer, Innovator</span>
+    <div id="loading"></div>
+    <div id="content" style="display:none;">
+        <div class="wrapper1">
+            <div class="up slideUp"></div>
+            <div class="spin">
+                <div class="load grow"></div>
             </div>
-            <div id="colorOverlay"></div>
-            <script src="dist/morphext.js"></script>
-            <script>
-            $("#js-rotating").Morphext({
-                animation: "flipInX",
-                speed: 3000,
-                complete: function() {
-                    console.log("This is called after a phrase is animated in! Current phrase index: " + this.index);
-                }
-            });
-            </script>
+            <div class="intro">
+                <div id="mainTitle">Kurt Spencer
+                    <br>
+                    <span id="js-rotating" class="morphext animated infinite">Developer, Full Stack, Photographer, Web Designer, Innovator</span>
+                </div>
+                <div id="colorOverlay"></div>
+                <script src="dist/morphext.js"></script>
+                <script>
+                $("#js-rotating").Morphext({
+                    animation: "flipInX",
+                    speed: 3000,
+                    complete: function() {
+                        console.log("This is called after a phrase is animated in! Current phrase index: " + this.index);
+                    }
+                });
+                </script>
+            </div>
+            <div class="down slideDown"></div>
         </div>
-        <div class="down slideDown"></div>
+        <div class="projectWrapper">
+            <h1>Projects</h1>
+            <div class='wrapper hideme'>
+                <div class='container2'>
+                    <div class='box_front box_front1'>
+                        <p></p>
+                    </div>
+                    <div class='box_bottom'>
+                        <p style="font-size: 40px;">Eur-Tune</br>
+                            <a href="http://192.241.232.219:1337/" target="_blank" style="text-decoration: none;">
+                                <p style="font-size: 16px;">View Project</p>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper hideme'>
+                <div class='container2'>
+                    <div class='box_front box_front2'>
+                        <p></p>
+                    </div>
+                    <div class='box_bottom'>
+                        <p style="font-size: 40px;">Omega 3 Studios</br>
+                            <a href="http://192.241.232.219:1337/" target="_blank" style="text-decoration: none;">
+                                <p style="font-size: 16px;">View Project</p>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper hideme'>
+                <div class='container2'>
+                    <div class='box_front box_front3'>
+                    </div>
+                    <div class='box_bottom'>
+                        <p style="font-size: 40px;">Knight Rider</br>
+                            <a href="" target="_blank" style="text-decoration: none;">
+                                <p style="font-size: 16px;">View Project</p>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper hideme'>
+                <div class='container2'>
+                    <div class='box_front box_front4'>
+                        <p id="comingSoon"></p>
+                    </div>
+                    <div class='box_bottom'>
+                        <p style="font-size: 40px;">CSS Interactive Blinds</br>
+                            <a href="" target="_blank" style="text-decoration: none;">
+                                <p style="font-size: 16px;">View Project</p>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper hideme'>
+                <div class='container2'>
+                    <div class='box_front box_front5'>
+                        <p id="comingSoon"></p>
+                    </div>
+                    <div class='box_bottom'>
+                        <p style="font-size: 40px;">Weather App</br>
+                            <a href="" target="_blank" style="text-decoration: none;">
+                                <p style="font-size: 16px;">View Project</p>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class='wrapper hideme'>
+                <div class='container2'>
+                    <div class='box_front box_front6'>
+                        <p id="comingSoon">Coming Soon!</p>
+                    </div>
+                    <div class='box_bottom'>
+                        <p style="font-size: 40px;">Project Name</br>
+                            <a href="" target="_blank" style="text-decoration: none;">
+                                <p style="font-size: 16px;">View Project</p>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="intro3"></div>
+        <!-- Project Wrapper -->
     </div>
-    <div class="projectWrapper">
-        <h1>Projects</h1>
-        <div class='wrapper hideme'>
-            <div class='container2'>
-                <div class='box_front box_front1'>
-                    <p></p>
-                </div>
-                <div class='box_bottom'>
-                    <p style="font-size: 40px;">Eur-Tune</br>
-                        <a href="http://192.241.232.219:1337/" target="_blank" style="text-decoration: none;">
-                            <p style="font-size: 16px;">View Project</p>
-                        </a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class='wrapper hideme'>
-            <div class='container2'>
-                <div class='box_front box_front2'>
-                    <p></p>
-                </div>
-                <div class='box_bottom'>
-                    <p style="font-size: 40px;">Omega 3 Studios</br>
-                        <a href="http://192.241.232.219:1337/" target="_blank" style="text-decoration: none;">
-                            <p style="font-size: 16px;">View Project</p>
-                        </a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class='wrapper hideme'>
-            <div class='container2'>
-                <div class='box_front box_front3'>
-                </div>
-                <div class='box_bottom'>
-                    <p style="font-size: 40px;">Knight Rider</br>
-                        <a href="" target="_blank" style="text-decoration: none;">
-                            <p style="font-size: 16px;">View Project</p>
-                        </a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class='wrapper hideme'>
-            <div class='container2'>
-                <div class='box_front box_front4'>
-                    <p id="comingSoon"></p>
-                </div>
-                <div class='box_bottom'>
-                    <p style="font-size: 40px;">CSS Interactive Blinds</br>
-                        <a href="" target="_blank" style="text-decoration: none;">
-                            <p style="font-size: 16px;">View Project</p>
-                        </a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class='wrapper hideme'>
-            <div class='container2'>
-                <div class='box_front box_front5'>
-                    <p id="comingSoon"></p>
-                </div>
-                <div class='box_bottom'>
-                    <p style="font-size: 40px;">Weather App</br>
-                        <a href="" target="_blank" style="text-decoration: none;">
-                            <p style="font-size: 16px;">View Project</p>
-                        </a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class='wrapper hideme'>
-            <div class='container2'>
-                <div class='box_front box_front6'>
-                    <p id="comingSoon">Coming Soon!</p>
-                </div>
-                <div class='box_bottom'>
-                    <p style="font-size: 40px;">Project Name</br>
-                        <a href="" target="_blank" style="text-decoration: none;">
-                            <p style="font-size: 16px;">View Project</p>
-                        </a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="intro3"></div>
-    <!-- Project Wrapper -->
 </body>
 <footer>Created by Kurt Spencer</footer>
 

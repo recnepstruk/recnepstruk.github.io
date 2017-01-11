@@ -40,7 +40,7 @@ body {
 
 .grow {
     animation-name: grow;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-timing-function: linear;
     animation-delay: .5s;
     animation-iteration-count: 1;
@@ -70,7 +70,7 @@ body {
     animation-name: slideUp;
     animation-duration: 1.5s;
     animation-timing-function: linear;
-    animation-delay: 1.5s;
+    animation-delay: 2s;
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: forwards;
@@ -80,7 +80,7 @@ body {
     animation-name: slideDown;
     animation-duration: 1.5s;
     animation-timing-function: linear;
-    animation-delay: 1.5s;
+    animation-delay: 2s;
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: forwards;
