@@ -1,0 +1,239 @@
+body {
+    margin: 0px;
+    font-family: futura, sans-serif;
+}
+
+.intro {
+    background-image: url('./img/meRocks.jpg');
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    background-size: cover;
+    background-position: 35%;
+    /*height: auto;*/
+    max-width: 100%;
+}
+@media screen and (max-width: 450px;) {
+    .intro {
+        background-attachment: none;
+    }
+}
+
+#colorOverlay  {
+    opacity: .6;
+    background-color: #20B886;
+    height: 100vh;
+    width: 100%;
+}
+
+.intro2 {
+    opacity: 0;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.intro3 {
+    background-image: url('./img/r32snow.jpg');
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+
+/******************************************************************
+                        3D Project Boxes
+*******************************************************************/
+
+.projectWrapper {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    color: #3B4257;
+}
+
+.wrapper {
+    perspective: 800px;
+    transform: scale(0.7);
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.container2 {
+    display: block;
+    width: 500px;
+    height: 295px;
+    max-width: 80vw;
+    margin: 0px auto;
+    text-align: center;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: rotateX(0deg) translateZ(125px);
+    -moz-transform: rotateX(0deg) translateZ(125px);
+    -ms-transform: rotateX(0deg) translateZ(125px);
+    -o-transform: rotateX(0deg) translateZ(125px);
+    transform: rotateX(0deg) translateZ(125px);
+    -webkit-transition: all 0.5s cubic-bezier(0.29, 1.53, 0.33, 1.01);
+    -moz-transition: all 0.5s cubic-bezier(0.29, 1.53, 0.33, 1.01);
+    transition: all 0.5s cubic-bezier(0.29, 1.53, 0.33, 1.01);
+}
+
+a:link {
+    color: #999999;
+}
+
+a:visited {
+    color: #999999;
+}
+
+a:hover {
+    color: #20B886;
+}
+
+.container2 p {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 900;
+}
+
+#comingSoon {
+    /*font-size: 1.6em;*/
+    font-size: 2.8vw;
+    position: relative;
+    transform: translateY(-50%);
+    top: 35%;
+    left: 1%;
+    backface-visibility: hidden;
+}
+#mainTitle {
+    z-index: 10;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 90px;
+    text-align: center;
+    margin-top: 30px;
+    font-family: futura, sans-serif;
+    color: white;
+    line-height: 80px;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+
+#mainTitle span {
+    font-size: 60px;
+    line-height: 50px;
+    font-weight: 100;
+    font-variant: small-caps;
+    letter-spacing: 3px;
+}
+
+.container2:hover {
+    -webkit-transform: rotateX(90deg) translateZ(125px);
+    -moz-transform: rotateX(90deg) translateZ(125px);
+    -ms-transform: rotateX(90deg) translateZ(125px);
+    -o-transform: rotateX(90deg) translateZ(125px);
+    transform: rotateX(90deg) translateZ(125px);
+}
+
+.box_front,
+.box_bottom {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    backface-visibility: hidden;
+}
+
+.box_front1 {
+    /*background-color: #20B886;*/
+    background-image: url('./img/macbookEurtune1.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.box_front2 {
+    /*background-color: #20B886;*/
+    background-image: url('./img/application.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.box_front3 {
+    background-image: url('./img/knightrider.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    backface-visibility: hidden;
+}
+
+.box_front4 {
+    background-image: url('./img/codepenblinds.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    backface-visibility: hidden;
+}
+
+.box_front5 {
+    background-image: url('./img/weatherApp.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    backface-visibility: hidden;
+}
+
+.box_front6 {
+    background-image: url('./img/macbook.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    backface-visibility: hidden;
+}
+
+.box_bottom {
+    background-color: white;
+    max-width: 80vw;
+    color: #3B4257;
+    transform: translate3D(0, 7vh, -125px) rotateX(-90deg);
+    /******* position x, position y, position z ********/
+}
+
+
+/******************************************************************
+                    Image Fade In On Scroll
+*******************************************************************/
+
+.hideme {
+    opacity: 0;
+}
+
+
+/******************************************************************
+                    Image Fade In On Scroll
+*******************************************************************/
+
+footer {
+    text-align: center;
+    height: 200px;
+}
+
+
