@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="dist/morphext.css">
     <link rel="stylesheet" href="loading.css">
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="responsive.css">
+    <!-- <link rel="stylesheet" href="normalize.css"> -->
+    <!-- <link rel="stylesheet" href="responsive.css"> -->
     <script src="main.js"></script>
 </head>
 
@@ -21,15 +21,28 @@
     <div id="loading"></div>
     <div id="content" style="display:none;">
         <div class="wrapper1">
+            <!-- Intro Animation -->
             <div class="up slideUp"></div>
             <div class="spin">
                 <div class="load grow"></div>
             </div>
+            <!-- Navigation Buttons -->
+            <div class="container navigation">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-6"> <a href="#profile" class="btn btn-sm animated-button victoria-one">Profile</a> </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6"> <a href="#section1" class="btn btn-sm animated-button victoria-two">Projects</a> </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6"> <a href="#skills" class="btn btn-sm animated-button victoria-three">Skills</a> </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6"> <a href="#contact" class="btn btn-sm animated-button victoria-four">Contact</a> </div>
+                </div>
+            </div>
+            <!-- Title Section -->
             <div class="intro">
                 <div id="mainTitle">Kurt Spencer
                     <br>
                     <span id="js-rotating" class="morphext animated infinite">Developer, Full Stack, Photographer, Web Designer, Innovator</span>
                 </div>
+                <!-- Who Am I Button -->
+                <a href="#profile" class="button startScrollBtn" id="startScroll" style="color: #f2f2f2; text-decoration: none;">Who am I?</a>
                 <div id="colorOverlay"></div>
                 <script src="dist/morphext.js"></script>
                 <script>
@@ -44,16 +57,23 @@
             </div>
             <div class="down slideDown"></div>
         </div>
-        <div class="projectWrapper">
-            <h1>Projects</h1>
+        <div id="profile">
+            <h1 style="text-align: center;"">Profile</h1>
+            <h3 style="text-align: center;">Under Construction</h3>
+            <p>I'm a self taught programmer with a professional web development education from RefactorU. As a full stack developer, I utilize MongoDB, Express.js, Angular.js, and Node.js for all my web and web-app building. It is safe to say I am a lean, MEAN, coding machine.  My top five traits are: initiative, innovation, zeal, focus, passion.</p>
+        </div>
+        <!-- 3D Project Boxes -->
+        <div class="projectWrapper" id="section1">
+            <h1 id="projectsTitle">Projects</h1>
             <div class='wrapper hideme'>
                 <div class='container2'>
-                    <div class='box_front box_front1'>
-                        <p></p>
-                    </div>
+                    <a href="/">
+                        <div class='box_front box_front1'>
+                        </div>
+                    </a>
                     <div class='box_bottom'>
                         <p style="font-size: 40px;">Eur-Tune</br>
-                            <a href="/" target="_blank" style="text-decoration: none;">
+                            <a href="/" style="text-decoration: none;">
                                 <p style="font-size: 16px;">View Project</p>
                             </a>
                         </p>
@@ -62,12 +82,13 @@
             </div>
             <div class='wrapper hideme'>
                 <div class='container2'>
-                    <div class='box_front box_front2'>
-                        <p></p>
-                    </div>
+                    <a href="/">
+                        <div class='box_front box_front2'>
+                        </div>
+                    </a>
                     <div class='box_bottom'>
                         <p style="font-size: 40px;">Omega 3 Studios</br>
-                            <a href="/" target="_blank" style="text-decoration: none;">
+                            <a href="/" style="text-decoration: none;">
                                 <p style="font-size: 16px;">View Project</p>
                             </a>
                         </p>
@@ -76,11 +97,13 @@
             </div>
             <div class='wrapper hideme'>
                 <div class='container2'>
-                    <div class='box_front box_front3'>
-                    </div>
+                    <a href="/">
+                        <div class='box_front box_front3'>
+                        </div>
+                    </a>
                     <div class='box_bottom'>
                         <p style="font-size: 40px;">Knight Rider</br>
-                            <a href="/" target="_blank" style="text-decoration: none;">
+                            <a href="/" style="text-decoration: none;">
                                 <p style="font-size: 16px;">View Project</p>
                             </a>
                         </p>
@@ -89,12 +112,13 @@
             </div>
             <div class='wrapper hideme'>
                 <div class='container2'>
-                    <div class='box_front box_front4'>
-                        <p id="comingSoon"></p>
-                    </div>
+                    <a href="/">
+                        <div class='box_front box_front4'>
+                        </div>
+                    </a>
                     <div class='box_bottom'>
                         <p style="font-size: 40px;">CSS Interactive Blinds</br>
-                            <a href="/" target="_blank" style="text-decoration: none;">
+                            <a href="/" style="text-decoration: none;">
                                 <p style="font-size: 16px;">View Project</p>
                             </a>
                         </p>
@@ -103,12 +127,13 @@
             </div>
             <div class='wrapper hideme'>
                 <div class='container2'>
-                    <div class='box_front box_front5'>
-                        <p id="comingSoon"></p>
-                    </div>
+                    <a href="/">
+                        <div class='box_front box_front5'>
+                        </div>
+                    </a>
                     <div class='box_bottom'>
                         <p style="font-size: 40px;">Weather App</br>
-                            <a href="/" target="_blank" style="text-decoration: none;">
+                            <a href="/" style="text-decoration: none;">
                                 <p style="font-size: 16px;">View Project</p>
                             </a>
                         </p>
@@ -122,7 +147,7 @@
                     </div>
                     <div class='box_bottom'>
                         <p style="font-size: 40px;">Project Name</br>
-                            <a href="/" target="_blank" style="text-decoration: none;">
+                            <a href="/" style="text-decoration: none;">
                                 <p style="font-size: 16px;">View Project</p>
                             </a>
                         </p>
@@ -130,22 +155,28 @@
                 </div>
             </div>
         </div>
+        <!-- Photography Section -->
         <div class="intro3"></div>
-        <!-- Project Wrapper -->
+        <!-- Skills Section -->
+        <div id="skills">
+            <h1 style="text-align: center;">Skill Section</h1>
+        </div>
+    </div>
+    <!-- Contact Section -->
+    <div class="navbar-bottom" id="contact" style="text-align: center;">
+        © Kurt Spencer 2016
+        <a href="https://github.com/recnepstruk/">
+            <img src="./img/github.png" width="60" height="60"></a>
+        <a href="https://www.instagram.com/recnepstruk/">
+            <img src="./img/instagram.png" width="60" height="60"></a>
+        <a href="https://www.linkedin.com/in/kurt-spencer-design">
+            <img src="./img/linkedin.png" width="60" height="60"></a>
+        <!-- <a href="/">
+                <img src="./img/gmail.png" width="60" height="60"></a> -->
+        <a style="text-decoration: none;" href="mailto:kurtspencer24@gmail.com?Subject=Oh%20you%20love%20coffee%20too?" target="_top">
+            <img src="./img/coffee.png" style="width: 106px; height: 106px; margin-top: 3px; margin-left: -25px;">
+        </a>
     </div>
 </body>
-<footer>© Kurt Spencer 2016</footer>
-<div class="footer navbar-bottom" style="margin-bottom: 60px; padding-left: 30px; text-align: center;">
-            <a href="https://github.com/recnepstruk/">
-                <img src="./img/github.png" width="60" height="60"></a>
-            <a href="https://www.instagram.com/recnepstruk/">
-                <img src="./img/instagram.png" width="60" height="60"></a>
-            <a href="https://www.linkedin.com/in/kurt-spencer-design">
-                <img src="./img/linkedin.png" width="60" height="60"></a>
-            <!-- <a href="/">
-                <img src="./img/gmail.png" width="60" height="60"></a> -->
-            <a style="text-decoration: none;" href="mailto:kurtspencer24@gmail.com?Subject=Oh%20you%20love%20coffee%20too?" target="_top">
-                <img src="./img/coffee.png" style="width: 106px; height: 106px; margin-top: 3px; margin-left: -25px;">
-            </a>
-        </div>
+
 </html>

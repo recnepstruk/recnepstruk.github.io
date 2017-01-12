@@ -3,33 +3,225 @@ body {
     font-family: futura, sans-serif;
 }
 
+
+/******************************************************************
+                        Navigation Icons
+*******************************************************************/
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+span.icon {
+    margin: 0 5px;
+    color: #D64541;
+}
+
+h2 {
+    color: #BDC3C7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.mrng-60-top {
+    margin-top: 60px;
+}
+
+.navigation {
+    position: absolute;
+    z-index: 55;
+    text-align: center;
+    margin: auto;
+    left: 4.5%;
+}
+
+/* Global Button Styles */
+
+a.animated-button:link,
+a.animated-button:visited {
+    position: relative;
+    display: block;
+    margin: 30px auto 0;
+    padding: 14px 15px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    border-radius: 0;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+a.animated-button:link:after,
+a.animated-button:visited:after {
+    content: "";
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 150%;
+    z-index: -1;
+    -webkit-transition: all 0.75s ease 0s;
+    -moz-transition: all 0.75s ease 0s;
+    -o-transition: all 0.75s ease 0s;
+    transition: all 0.75s ease 0s;
+}
+
+a.animated-button:link:hover,
+a.animated-button:visited:hover {
+    color: #FFF;
+    text-shadow: none;
+}
+
+a.animated-button:link:hover:after,
+a.animated-button:visited:hover:after {
+    height: 450%;
+}
+
+a.animated-button:link,
+a.animated-button:visited {
+    position: relative;
+    display: block;
+    margin: 30px auto 0;
+    padding: 14px 15px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 0;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+/* Victoria Buttons */
+
+a.animated-button.victoria-one {
+    border: 2px solid #D24D57;
+    font-family: 'Lato', sans-serif;
+}
+
+a.animated-button.victoria-one:after {
+    background: #D24D57;
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
+
+a.animated-button.victoria-two {
+    border: 2px solid #D24D57;
+    font-family: 'Lato', sans-serif;
+}
+
+a.animated-button.victoria-two:after {
+    background: #D24D57;
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+    transform: translateX(-50%) translateY(-50%) rotate(25deg);
+}
+
+a.animated-button.victoria-three {
+    border: 2px solid #D24D57;
+    font-family: 'Lato', sans-serif;
+}
+
+a.animated-button.victoria-three:after {
+    background: #D24D57;
+    opacity: .5;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+a.animated-button.victoria-three:hover:after {
+    height: 140%;
+    opacity: 1;
+}
+
+a.animated-button.victoria-four {
+    border: 2px solid #D24D57;
+    font-family: 'Lato', sans-serif;
+}
+
+a.animated-button.victoria-four:after {
+    background: #D24D57;
+    opacity: .5;
+    -moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+    -ms-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+    -webkit-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+    transform: translateY(-50%) translateX(-50%) rotate(90deg);
+}
+
+a.animated-button.victoria-four:hover:after {
+    opacity: 1;
+    height: 600% !important;
+}
+
+
+/******************************************************************
+                        Title Section
+*******************************************************************/
+
 .intro {
     background-image: url('./img/meRocks.jpg');
     background-repeat: no-repeat;
     /*background-attachment: fixed;*/
     background-size: cover;
     background-position: 35%;
-    /*height: auto;*/
     max-width: 100%;
 }
-@media screen and (max-width: 450px;) {
-    .intro {
-        background-attachment: none;
-    }
+
+#mainTitle {
+    z-index: 10;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 90px;
+    text-align: center;
+    margin-top: 30px;
+    font-family: futura, sans-serif;
+    color: white;
+    line-height: 80px;
+    margin-bottom: 20px;
+    font-weight: 100;
 }
 
-#colorOverlay  {
+#mainTitle span {
+    font-size: 60px;
+    line-height: 50px;
+    font-weight: 100;
+    font-variant: small-caps;
+    letter-spacing: 3px;
+}
+
+.startScrollBtn {
+    z-index: 1;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+    margin-top: 30px;
+    /*transform: scale(1);*/
+}
+
+#colorOverlay {
     opacity: .6;
     background-color: #20B886;
-    height: 100vh;
-    width: 100%;
-}
-
-.intro2 {
-    opacity: 0;
-    background-repeat: no-repeat;
-    /*background-attachment: fixed;*/
-    background-size: cover;
     height: 100vh;
     width: 100%;
 }
@@ -45,14 +237,77 @@ body {
 
 
 /******************************************************************
+                        About Me Button
+*******************************************************************/
+
+.button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px 13px;
+    border: 1px solid #a01421;
+    border-radius: 0px;
+    background: #ff253e;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff253e), to(#a01421));
+    background: -moz-linear-gradient(top, #ff253e, #a01421);
+    background: linear-gradient(to bottom, #ff253e, #a01421);
+    font: normal normal bold 20px trebuchet ms;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase
+}
+
+.button:hover {
+    border: 1px solid ##bc1727;
+    background: #ff2c4a;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff2c4a), to(#c01828));
+    background: -moz-linear-gradient(top, #ff2c4a, #c01828);
+    background: linear-gradient(to bottom, #ff2c4a, #c01828);
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase
+}
+
+.button:focus {
+    text-transform: uppercase
+}
+
+/******************************************************************
+                        Profile Section
+*******************************************************************/
+#profile {
+    height: 100vh;
+    width: 100%;
+    /*border: 5px solid black;*/
+    color: #3B4257;
+    font-family: futura, sans-serif;
+}
+
+#profile h3 {
+    background-color: yellow;
+    padding: 10px;
+}
+
+#profile p {
+    margin: auto;
+    width: 50%;
+    height: 200px;
+}
+
+/******************************************************************
                         3D Project Boxes
 *******************************************************************/
+#projectsTitle {
+    /*margin-top: 30px; */
+}
 
 .projectWrapper {
     position: relative;
     margin: 0 auto;
     text-align: center;
     color: #3B4257;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .wrapper {
@@ -125,29 +380,6 @@ a:hover {
     left: 1%;
     backface-visibility: hidden;
 }
-#mainTitle {
-    z-index: 10;
-    left: 50%;
-    top: 60%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    font-size: 90px;
-    text-align: center;
-    margin-top: 30px;
-    font-family: futura, sans-serif;
-    color: white;
-    line-height: 80px;
-    margin-bottom: 20px;
-    font-weight: 100;
-}
-
-#mainTitle span {
-    font-size: 60px;
-    line-height: 50px;
-    font-weight: 100;
-    font-variant: small-caps;
-    letter-spacing: 3px;
-}
 
 .container2:hover {
     -webkit-transform: rotateX(90deg) translateZ(125px);
@@ -172,6 +404,7 @@ a:hover {
     background-image: url('./img/macbookEurtune1.jpg');
     background-repeat: no-repeat;
     background-size: contain;
+    text-indent: -9999px;
 }
 
 .box_front2 {
@@ -217,23 +450,39 @@ a:hover {
     /******* position x, position y, position z ********/
 }
 
+/******************************************************************
+                        Skills
+*******************************************************************/
+#skills {
+    height: 100vh;
+    width: 100%;
+    /*border: 5px solid black;*/
+    font-family: futura, sans-serif;
+}
+
+/******************************************************************
+                    Contact Section
+*******************************************************************/
+#contact {
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    /*border: 5px solid black;*/
+    font-family: futura, sans-serif;
+}
 
 /******************************************************************
                     Image Fade In On Scroll
 *******************************************************************/
-
 .hideme {
     opacity: 0;
 }
 
-
 /******************************************************************
-                    Image Fade In On Scroll
+                    Media Queries
 *******************************************************************/
-
-footer {
-    text-align: center;
-    height: 70px;
+@media (max-device-width:639px) {
+    .navigation  {
+        display: none;
+    }
 }
-
-
