@@ -99,11 +99,11 @@ span.icon {
 }
 
 .mrng-60-top {
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
 .navigation {
-    position: absolute;
+    position: fixed;
     z-index: 55;
     text-align: center;
     margin: auto;
@@ -117,7 +117,7 @@ a.animated-button:link,
 a.animated-button:visited {
     position: relative;
     display: block;
-    margin: 30px auto 0;
+    margin: 10px auto 0;
     padding: 14px 15px;
     color: #fff;
     font-size: 14px;
@@ -165,7 +165,7 @@ a.animated-button:link,
 a.animated-button:visited {
     position: relative;
     display: block;
-    margin: 30px auto 0;
+    margin: 10px auto 0;
     padding: 14px 15px;
     color: #fff;
     font-size: 14px;
@@ -369,7 +369,7 @@ a.animated-button.victoria-four:hover:after {
     font-family: futura, sans-serif;
     font-size: 20px;
     text-align: center;
-    padding: 20px;
+    padding-top: 73px;
 }
 
 #profile h3 {
@@ -395,7 +395,7 @@ a.animated-button.victoria-four:hover:after {
 }
 
 #profileBorder {
-    height: 94vh;
+    height: 86vh;
     width: 96vw;
     border: 7px solid #D64541;
     position: absolute;
@@ -426,7 +426,7 @@ a.animated-button.victoria-four:hover:after {
     margin: 0 auto;
     text-align: center;
     color: #3B4257;
-    padding: 20px;
+    padding-top: 73px;
 }
 
 .wrapper {
@@ -574,11 +574,11 @@ a:hover {
     text-align: center;
     margin: auto;
     font-size: 20px;
-    padding: 20px;
+    padding-top: 73px;
 }
 
 #skillsBorder {
-    height: 94vh;
+    height: 86vh;
     width: 96vw;
     border: 7px solid #D64541;
     position: absolute;
@@ -597,7 +597,7 @@ a:hover {
     width: 100%;
     position: relative;
     font-family: futura, sans-serif;
-    padding-top: 20px;
+    padding-top: 73px;
 }
 
 #contactContain {
@@ -609,6 +609,26 @@ a:hover {
     text-align: center;
 }
 
+/******************************************************************
+                    Go Topside
+*******************************************************************/
+.go-top {
+    position: fixed;
+    z-index: 50;
+    bottom: 2em;
+    right: 2em;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+    padding: 1em;
+    display: none;
+}
+
+.go-top:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
 
 /******************************************************************
                     Image Fade In On Scroll
@@ -627,9 +647,6 @@ a:hover {
     #projectsSpacer {
         width: 15vw;
     }
-    #profile h3 {
-        display: none;
-    }
     #profile p {
         text-align: left;
         width: 90%;
@@ -643,12 +660,21 @@ a:hover {
 
 /********************* Menu **************************/
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .navbar {
         display: block;
         z-index: 50;
     }
     .navigation {
+        display: none;
+    }
+    .navbar-brand {
+        font-size: 40px; 
+        position: fixed; 
+        top: .5%; 
+        left: 0;
+    }
+    #profile h3 {
         display: none;
     }
 }

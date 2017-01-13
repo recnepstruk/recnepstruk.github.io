@@ -5,19 +5,6 @@ window.onload = function() {
     }, 100); //100ms for example
 };
 
-// Hamburger Icon
-$(document).ready(function() {
-    $('#nav-icon3').click(function() {
-        $(this).toggleClass('open');
-    });
-});
-
-// Scroll to first section
-// $('#startScroll').click(function() {
-//     $("html, body").animate({ scrollTop: 0 }, 1000);
-//     return false;
-// });
-
 // Fade In components on scroll
 $(document).ready(function() {
 
@@ -54,7 +41,7 @@ $(document).ready(function() {
             // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
-            }, 1000, function() {
+            }, 2000, function() {
 
                 // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
@@ -63,6 +50,14 @@ $(document).ready(function() {
     });
 });
 
+// Hamburger Icon
+$(document).ready(function() {
+    $('#nav-icon3').click(function() {
+        $(this).toggleClass('open');
+    });
+});
+
+// Hamburger Menu open and close
 $(function() {
     var navMain = $(".main");
     navMain.on("click", "a", null, function() {
@@ -75,31 +70,20 @@ $(function() {
     });
 });
 
-// $(function(){
-/*-------------------------------------------------------------------*/
-/*  4. Page scrolling feature, requires jQuery Easing plugin.
-/*-------------------------------------------------------------------*/
-// var pageScroll = function(){
-//     $('.page-scroll > a').bind('click', function(e){
-//         e.preventDefault();
+$(document).ready(function() {
+    // Show or hide the sticky footer button
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 200) {
+            $('.go-top').fadeIn(200);
+        } else {
+            $('.go-top').fadeOut(200);
+        }
+    });
 
-//         var anchor = $(this),
-//         href = anchor.attr('href'),
-//         offset = $('body').attr('data-offset');
+    // Animate the scroll to top
+    $('.go-top').click(function(event) {
+        event.preventDefault();
 
-//         $('html, body').stop().animate({
-//             scrollTop: $(href).offset().top - (offset - 1)
-//         }, 1500, 'easeInOutExpo');
-
-/*
- * Automatically retract the navigation after clicking
- * on one of the menu items.
- */
-//             if(!$(this).parent().hasClass('dropdown')){
-//                 $('.berg-collapse').collapse('hide');
-//             }
-//         });
-//     };
-
-//     pageScroll();
-// });
+        $('html, body').animate({ scrollTop: 0 }, 1000);
+    })
+});
