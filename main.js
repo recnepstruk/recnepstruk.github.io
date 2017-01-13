@@ -5,6 +5,13 @@ window.onload = function() {
     }, 100); //100ms for example
 };
 
+// Hamburger Icon
+$(document).ready(function() {
+    $('#nav-icon3').click(function() {
+        $(this).toggleClass('open');
+    });
+});
+
 // Scroll to first section
 // $('#startScroll').click(function() {
 //     $("html, body").animate({ scrollTop: 0 }, 1000);
@@ -56,12 +63,43 @@ $(document).ready(function() {
     });
 });
 
-// Hamburger menu toggle
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
+$(function() {
+    var navMain = $(".main");
+    navMain.on("click", "a", null, function() {
+        navMain.collapse('hide');
+    });
+    $(document).ready(function() {
+        $('#nav-icon3').click(function() {
+            $(this).toggleClass('open');
+        });
+    });
+});
+
+// $(function(){
+/*-------------------------------------------------------------------*/
+/*  4. Page scrolling feature, requires jQuery Easing plugin.
+/*-------------------------------------------------------------------*/
+// var pageScroll = function(){
+//     $('.page-scroll > a').bind('click', function(e){
+//         e.preventDefault();
+
+//         var anchor = $(this),
+//         href = anchor.attr('href'),
+//         offset = $('body').attr('data-offset');
+
+//         $('html, body').stop().animate({
+//             scrollTop: $(href).offset().top - (offset - 1)
+//         }, 1500, 'easeInOutExpo');
+
+/*
+ * Automatically retract the navigation after clicking
+ * on one of the menu items.
+ */
+//             if(!$(this).parent().hasClass('dropdown')){
+//                 $('.berg-collapse').collapse('hide');
+//             }
+//         });
+//     };
+
+//     pageScroll();
+// });

@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     font-family: futura, sans-serif;
+    /*padding-top: 70px;*/
 }
 
 
@@ -8,7 +9,81 @@ body {
                         Hamburger Menu
 *******************************************************************/
 
-ul.topnav {
+#nav-icon3 {
+    width: 25px;
+    height: 20px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+#nav-icon3 span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #fff;
+    border-radius: 0px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+/* Icon 3 */
+
+#nav-icon3 span:nth-child(1) {
+    top: -2px;
+}
+
+#nav-icon3 span:nth-child(2),
+#nav-icon3 span:nth-child(3) {
+    top: 8px;
+}
+
+#nav-icon3 span:nth-child(4) {
+    top: 18px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+    top: 10px;
+    width: 0%;
+    left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+    top: 10px;
+    width: 0%;
+    left: 50%;
+}
+
+.navbar {
     display: none;
 }
 
@@ -549,9 +624,6 @@ a:hover {
 *******************************************************************/
 
 @media (max-device-width:639px) {
-    .navigation {
-        display: none;
-    }
     #projectsSpacer {
         width: 15vw;
     }
@@ -566,61 +638,23 @@ a:hover {
         text-align: left;
         width: 90%
     }
-    /********************* Hamburger Menu **************************/
-    ul.topnav {
+}
+
+
+/********************* Menu **************************/
+
+@media (max-width: 768px) {
+    .navbar {
         display: block;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: none;
-        position: fixed;
-        top: 0;
-        width: 100%;
         z-index: 50;
     }
-    ul.topnav li {
-        float: left;
-    }
-    ul.topnav li a {
-        display: inline-block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        transition: 0.3s;
-        font-size: 17px;
-    }
-    ul.topnav li {
+    .navigation {
         display: none;
     }
-    ul.topnav li.icon {
-        float: right;
-        display: inline-block;
-        background-color: none;
-    }
 }
 
-@media (max-width:680px) {
-    ul.topnav.responsive {
-        position: relative;
-    }
-    ul.topnav.responsive li.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    ul.topnav.responsive li {
-        float: none;
-        display: inline;
-    }
-    ul.topnav.responsive li a {
-        display: block;
-        text-align: left;
-    }
-}
 
-    /********************* Iphone 5 Queries **************************/
+/********************* Iphone 5 Queries **************************/
 
 @media (max-device-width:400px) {
     #mainTitle {
