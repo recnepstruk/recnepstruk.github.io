@@ -1,0 +1,20 @@
+{
+  "name": "package",
+  "homepage": "https://github.com/recnepstruk/recnepstruk.github.io",
+  "authors": [
+    "kurt spencer <KurtSpencer@kurts-MacBook-Pro.local>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "aos": "^2.1.1"
+  }
+}

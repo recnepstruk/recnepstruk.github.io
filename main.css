@@ -5,6 +5,15 @@ body {
 
 
 /******************************************************************
+                        Hamburger Menu
+*******************************************************************/
+
+ul.topnav {
+    display: none;
+}
+
+
+/******************************************************************
                         Navigation Icons
 *******************************************************************/
 
@@ -12,12 +21,6 @@ body {
 span.icon {
     margin: 0 5px;
     color: #D64541;
-}
-
-h2 {
-    color: #BDC3C7;
-    text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 .mrng-60-top {
@@ -31,6 +34,7 @@ h2 {
     margin: auto;
     left: 4.5%;
 }
+
 
 /* Global Button Styles */
 
@@ -103,6 +107,7 @@ a.animated-button:visited {
     -o-transition: all 1s ease;
     transition: all 1s ease;
 }
+
 
 /* Victoria Buttons */
 
@@ -272,33 +277,73 @@ a.animated-button.victoria-four:hover:after {
     text-transform: uppercase
 }
 
+
 /******************************************************************
                         Profile Section
 *******************************************************************/
+
+#profileTitle {
+    font-size: 40px;
+    text-align: center;
+}
+
 #profile {
     height: 100vh;
     width: 100%;
-    /*border: 5px solid black;*/
     color: #3B4257;
     font-family: futura, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
 }
 
 #profile h3 {
     background-color: yellow;
     padding: 10px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    transform: rotateZ(25deg);
+    position: relative;
+    top: 35%;
+    z-index: 10;
+}
+
+#profile h3:hover {
+    transform: rotateZ(0deg);
 }
 
 #profile p {
     margin: auto;
-    width: 50%;
+    width: 70%;
     height: 200px;
 }
+
+#profileBorder {
+    height: 94vh;
+    width: 96vw;
+    border: 7px solid #D64541;
+    position: absolute;
+    left: 2vw;
+    z-index: 5;
+}
+
 
 /******************************************************************
                         3D Project Boxes
 *******************************************************************/
+
 #projectsTitle {
-    /*margin-top: 30px; */
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+#projectsSpacer {
+    border-bottom: 7px solid #D64541;
+    text-align: center;
+    width: 8vw;
+    height: auto;
+    margin: 20px auto;
 }
 
 .projectWrapper {
@@ -306,8 +351,7 @@ a.animated-button.victoria-four:hover:after {
     margin: 0 auto;
     text-align: center;
     color: #3B4257;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
 }
 
 .wrapper {
@@ -372,7 +416,6 @@ a:hover {
 }
 
 #comingSoon {
-    /*font-size: 1.6em;*/
     font-size: 2.8vw;
     position: relative;
     transform: translateY(-50%);
@@ -397,18 +440,16 @@ a:hover {
     position: absolute;
     top: 0;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .box_front1 {
-    /*background-color: #20B886;*/
     background-image: url('./img/macbookEurtune1.jpg');
     background-repeat: no-repeat;
     background-size: contain;
-    text-indent: -9999px;
 }
 
 .box_front2 {
-    /*background-color: #20B886;*/
     background-image: url('./img/application.jpg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -418,28 +459,24 @@ a:hover {
     background-image: url('./img/knightrider.jpg');
     background-repeat: no-repeat;
     background-size: contain;
-    backface-visibility: hidden;
 }
 
 .box_front4 {
     background-image: url('./img/codepenblinds.jpg');
     background-repeat: no-repeat;
     background-size: contain;
-    backface-visibility: hidden;
 }
 
 .box_front5 {
     background-image: url('./img/weatherApp.jpg');
     background-repeat: no-repeat;
     background-size: contain;
-    backface-visibility: hidden;
 }
 
 .box_front6 {
     background-image: url('./img/macbook.jpg');
     background-repeat: no-repeat;
     background-size: contain;
-    backface-visibility: hidden;
 }
 
 .box_bottom {
@@ -450,39 +487,166 @@ a:hover {
     /******* position x, position y, position z ********/
 }
 
+
 /******************************************************************
                         Skills
 *******************************************************************/
+
 #skills {
     height: 100vh;
-    width: 100%;
-    /*border: 5px solid black;*/
+    width: 70%;
     font-family: futura, sans-serif;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    padding: 20px;
 }
+
+#skillsBorder {
+    height: 94vh;
+    width: 96vw;
+    border: 7px solid #D64541;
+    position: absolute;
+    left: 2vw;
+    z-index: 5;
+}
+
 
 /******************************************************************
                     Contact Section
 *******************************************************************/
+
 #contact {
     text-align: center;
     height: 100vh;
     width: 100%;
-    /*border: 5px solid black;*/
+    position: relative;
     font-family: futura, sans-serif;
+    padding-top: 20px;
 }
+
+#contactContain {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    text-align: center;
+}
+
 
 /******************************************************************
                     Image Fade In On Scroll
 *******************************************************************/
+
 .hideme {
     opacity: 0;
 }
 
+
 /******************************************************************
                     Media Queries
 *******************************************************************/
+
 @media (max-device-width:639px) {
-    .navigation  {
+    .navigation {
         display: none;
+    }
+    #projectsSpacer {
+        width: 15vw;
+    }
+    #profile h3 {
+        display: none;
+    }
+    #profile p {
+        text-align: left;
+        width: 90%;
+    }
+    #skills p {
+        text-align: left;
+        width: 90%
+    }
+    /********************* Hamburger Menu **************************/
+    ul.topnav {
+        display: block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: none;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 50;
+    }
+    ul.topnav li {
+        float: left;
+    }
+    ul.topnav li a {
+        display: inline-block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+    ul.topnav li {
+        display: none;
+    }
+    ul.topnav li.icon {
+        float: right;
+        display: inline-block;
+        background-color: none;
+    }
+}
+
+@media (max-width:680px) {
+    ul.topnav.responsive {
+        position: relative;
+    }
+    ul.topnav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    ul.topnav.responsive li {
+        float: none;
+        display: inline;
+    }
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+}
+
+    /********************* Iphone 5 Queries **************************/
+
+@media (max-device-width:400px) {
+    #mainTitle {
+        font-size: 50px;
+        line-height: 40px;
+    }
+    #mainTitle span {
+        font-size: 40px;
+    }
+    #profile h3 {
+        display: none;
+    }
+    #profile p {
+        text-align: left;
+        width: 90%;
+    }
+    #skills p {
+        text-align: left;
+        width: 100%;
+    }
+    #skills {
+        height: 100%;
+        padding: 10px;
+    }
+    #contact img {
+        width: 30px;
+        height: 30px;
     }
 }

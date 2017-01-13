@@ -6,10 +6,10 @@ window.onload = function() {
 };
 
 // Scroll to first section
-$('#startScroll').click(function() {
-    $("html, body").animate({ scrollTop: 0 }, 1000);
-    return false;
-});
+// $('#startScroll').click(function() {
+//     $("html, body").animate({ scrollTop: 0 }, 1000);
+//     return false;
+// });
 
 // Fade In components on scroll
 $(document).ready(function() {
@@ -29,7 +29,6 @@ $(document).ready(function() {
                 $(this).animate({ 'opacity': '1' }, 1000);
 
             }
-
         });
 
     });
@@ -56,3 +55,13 @@ $(document).ready(function() {
         } // End if
     });
 });
+
+// Hamburger menu toggle
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}

@@ -4,10 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kurt Spencer</title>
     <script src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="dist/morphext.css">
     <link rel="stylesheet" href="loading.css">
@@ -28,13 +30,20 @@
             </div>
             <!-- Navigation Buttons -->
             <div class="container navigation">
-                <div class="row">
-                    <div class="col-md-3 col-sm-3 col-xs-6"> <a href="#profile" class="btn btn-sm animated-button victoria-one">Profile</a> </div>
-                    <div class="col-md-3 col-sm-3 col-xs-6"> <a href="#section1" class="btn btn-sm animated-button victoria-two">Projects</a> </div>
-                    <div class="col-md-3 col-sm-3 col-xs-6"> <a href="#skills" class="btn btn-sm animated-button victoria-three">Skills</a> </div>
-                    <div class="col-md-3 col-sm-3 col-xs-6"> <a href="#contact" class="btn btn-sm animated-button victoria-four">Contact</a> </div>
-                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6"> <a href="#profile" class="btn btn-sm animated-button victoria-one">Profile</a> </div>
+                <div class="col-md-3 col-sm-3 col-xs-6"> <a href="#section1" class="btn btn-sm animated-button victoria-two">Projects</a> </div>
+                <div class="col-md-3 col-sm-3 col-xs-6"> <a href="#skills" class="btn btn-sm animated-button victoria-three">Skills</a> </div>
+                <div class="col-md-3 col-sm-3 col-xs-6"> <a href="#contact" class="btn btn-sm animated-button victoria-four">Contact</a> </div>
             </div>
+            <ul class="topnav" id="myTopnav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="icon">
+                    <a href="javascript:void(0);" style="font-size:40px;" onclick="myFunction()">☰</a>
+                </li>
+            </ul>
             <!-- Title Section -->
             <div class="intro">
                 <div id="mainTitle">Kurt Spencer
@@ -58,13 +67,16 @@
             <div class="down slideDown"></div>
         </div>
         <div id="profile">
-            <h1 style="text-align: center;"">Profile</h1>
-            <h3 style="text-align: center;">Under Construction</h3>
-            <p>I'm a self taught programmer with a professional web development education from RefactorU. As a full stack developer, I utilize MongoDB, Express.js, Angular.js, and Node.js for all my web and web-app building. It is safe to say I am a lean, MEAN, coding machine.  My top five traits are: initiative, innovation, zeal, focus, passion.</p>
+            <div id="profileBorder"></div>
+            <h1 id="profileTitle">PROFILE</h1>
+            <h3>/////////////////////DO NOT CROSS        Under Construction        DO NOT CROSS/////////////////////</h3>
+            <p>I'm a self taught programmer with a professional web development education from RefactorU. As a full stack developer, I utilize MongoDB, Express.js, Angular.js, and Node.js for all my web and web-app building. It is safe to say I am a lean, MEAN, coding machine. My top five traits are: initiative, innovation, zeal, focus, passion.</p>
         </div>
         <!-- 3D Project Boxes -->
         <div class="projectWrapper" id="section1">
-            <h1 id="projectsTitle">Projects</h1>
+            <div id="projectsBorder"></div>
+            <h1 id="projectsTitle">PROJECTS</h1>
+            <div id="projectsSpacer"></div>
             <div class='wrapper hideme'>
                 <div class='container2'>
                     <a href="/">
@@ -159,23 +171,29 @@
         <div class="intro3"></div>
         <!-- Skills Section -->
         <div id="skills">
-            <h1 style="text-align: center;">Skill Section</h1>
+            <div id="skillsBorder"></div>
+            <h1 style="text-align: center;">SKILLS SECTION</h1>
+            <p>
+                Languages/ Frameworks/ Libraries /Databases/ Version Control: HTML | CSS3 | Javascript | AngularJS | ExpressJS | NodeJS | jQuery | Bootstrap | Mongoose | Socket.IO | MongoDB | Git/Github | CSS3D | JSON | REST Other: Lightroom, Photoshop</p>
         </div>
     </div>
     <!-- Contact Section -->
-    <div class="navbar-bottom" id="contact" style="text-align: center;">
+    <div id="contact" style="text-align: center;">
         © Kurt Spencer 2016
-        <a href="https://github.com/recnepstruk/">
-            <img src="./img/github.png" width="60" height="60"></a>
-        <a href="https://www.instagram.com/recnepstruk/">
-            <img src="./img/instagram.png" width="60" height="60"></a>
-        <a href="https://www.linkedin.com/in/kurt-spencer-design">
-            <img src="./img/linkedin.png" width="60" height="60"></a>
-        <!-- <a href="/">
+        <br>
+        <div id="contactContain">
+            <a href="https://github.com/recnepstruk/">
+                <img src="./img/github.png" width="60" height="60"></a>
+            <a href="https://www.instagram.com/recnepstruk/">
+                <img src="./img/instagram.png" width="60" height="60"></a>
+            <a href="https://www.linkedin.com/in/kurt-spencer-design">
+                <img src="./img/linkedin.png" width="60" height="60"></a>
+            <!-- <a href="/">
                 <img src="./img/gmail.png" width="60" height="60"></a> -->
-        <a style="text-decoration: none;" href="mailto:kurtspencer24@gmail.com?Subject=Oh%20you%20love%20coffee%20too?" target="_top">
-            <img src="./img/coffee.png" style="width: 106px; height: 106px; margin-top: 3px; margin-left: -25px;">
-        </a>
+            <a style="text-decoration: none;" href="mailto:kurtspencer24@gmail.com?Subject=Oh%20you%20love%20coffee%20too?" target="_top">
+                <img src="./img/coffee.png" id="coffeeBtn" style="width: 106px; height: 106px; margin-top: 3px; margin-left: -25px;">
+            </a>
+        </div>
     </div>
 </body>
 
