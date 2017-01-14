@@ -26,6 +26,20 @@
 </head>
 
 <body>
+    <!-- MODALS -->
+    <div class="modal fade" id="tinderModal" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4>Tinder</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Are you trying to date me or hire me?</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="wrapper1" id="home">
         <!-- Intro Animation -->
         <div class="up slideUp"></div>
@@ -104,7 +118,7 @@
         <div id="projectsSpacer"></div>
         <div class='wrapper hideme'>
             <div class='container2'>
-                <a href="#section1">
+                <a>
                     <div class='box_front box_front1'>
                     </div>
                 </a>
@@ -119,7 +133,7 @@
         </div>
         <div class='wrapper hideme'>
             <div class='container2'>
-                <a href="#section1">
+                <a>
                     <div class='box_front box_front2'>
                     </div>
                 </a>
@@ -134,7 +148,7 @@
         </div>
         <div class='wrapper hideme'>
             <div class='container2'>
-                <a href="#section1">
+                <a>
                     <div class='box_front box_front3'>
                     </div>
                 </a>
@@ -149,7 +163,7 @@
         </div>
         <div class='wrapper hideme'>
             <div class='container2'>
-                <a href="#section1">
+                <a>
                     <div class='box_front box_front4'>
                     </div>
                 </a>
@@ -164,7 +178,7 @@
         </div>
         <div class='wrapper hideme'>
             <div class='container2'>
-                <a href="#section1">
+                <a>
                     <div class='box_front box_front5'>
                     </div>
                 </a>
@@ -179,11 +193,13 @@
         </div>
         <div class='wrapper hideme'>
             <div class='container2'>
-                <div class='box_front box_front6'>
-                    <p id="comingSoon">Coming Soon!</p>
-                </div>
+                <a>
+                    <div class='box_front box_front6'>
+                        <!-- <p id="comingSoon">Coming Soon!</p> -->
+                    </div>
+                </a>
                 <div class='box_bottom'>
-                    <p style="font-size: 40px;">Project Name</br>
+                    <p style="font-size: 40px;">My Portfolio</br>
                         <a href="#section1" style="text-decoration: none;">
                             <p style="font-size: 16px;">View Project</p>
                         </a>
@@ -207,7 +223,7 @@
             <br>HTML | CSS3 | Javascript | AngularJS | ExpressJS | NodeJS | jQuery | Bootstrap | Mongoose | Socket.IO | MongoDB | Git/Github | CSS3D | JSON | REST
             <br>Other: Lightroom, Photoshop</p>
         <!-- MILESTONES SECTION START -->
-<!--         <section id="milestones" class="section">
+        <!--         <section id="milestones" class="section">
             <div class="container-fluid section-wrapper">
                 <div class="section-content">
                     <div class="row">
@@ -267,7 +283,7 @@
         <h1 id="contactTitle">Thanks for looking.<br>Check out all these cool links!</h1>
         <div id="skillsSpacer"></div>
         <div id="contactContain">
-            <a href="#contact">
+            <a data-toggle="modal" data-target="#tinderModal">
                 <img src="./img/tinder.png" width="60" height="60"></a>
             <a href="https://github.com/recnepstruk/">
                 <img src="./img/github.png" width="60" height="60"></a>
@@ -285,7 +301,6 @@
     </div>
     <!-- Main Javascript -->
     <script src="main.js"></script>
-
 </body>
 
 </html>
