@@ -10,7 +10,7 @@ body {
     height: 100vh;
     width: 100%;
     position: relative;
-    overflow: hidden;
+    /*overflow: hidden;*/
     z-index: 80;
 }
 
@@ -116,10 +116,10 @@ body {
 
 @keyframes slideDown {
     from {
-        transform: translateY(0%);
+        height: 50%;
     }
     to {
-        transform: translateY(100%);
+        height: 0%;
     }
 }
 

@@ -41,7 +41,7 @@ $(document).ready(function() {
             // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
-            }, 2000, function() {
+            }, 1000, function() {
 
                 // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
@@ -70,6 +70,14 @@ $(function() {
     });
 });
 
+$(document).ready(function() {
+    var $logo = $('.animated-button');
+    $(document).scroll(function() {
+        $logo.css({ color: $(this).scrollTop() > 600 ? "#3B4257" : "#fff" });
+    });
+});
+
+// Scroll to top button
 $(document).ready(function() {
     // Show or hide the sticky footer button
     $(window).scroll(function() {
