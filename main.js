@@ -50,6 +50,11 @@ $(document).ready(function() {
     });
 });
 
+
+
+/*-------------------------------------------------------------------*/
+/*  Hamburger menu open and close
+/*-------------------------------------------------------------------*/
 // Hamburger Icon
 $(document).ready(function() {
     $('#nav-icon3').click(function() {
@@ -57,7 +62,6 @@ $(document).ready(function() {
     });
 });
 
-// Hamburger Menu open and close
 $(function() {
     var navMain = $(".main");
     navMain.on("click", "a", null, function() {
@@ -68,6 +72,8 @@ $(function() {
             $(this).toggleClass('open');
         });
     });
+
+    
 });
 
 $(document).ready(function() {
@@ -77,7 +83,10 @@ $(document).ready(function() {
     });
 });
 
-// Scroll to top button
+/*-------------------------------------------------------------------*/
+/*  Scroll to top button
+/*-------------------------------------------------------------------*/
+
 $(document).ready(function() {
     // Show or hide the sticky footer button
     $(window).scroll(function() {
@@ -95,3 +104,4 @@ $(document).ready(function() {
         $('html, body').animate({ scrollTop: 0 }, 1000);
     })
 });
+
