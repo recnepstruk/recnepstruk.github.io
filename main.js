@@ -5,6 +5,8 @@ window.onload = function() {
     }, 100); //100ms for example
 };
 
+
+
 // Fade In components on scroll
 $(document).ready(function() {
 
@@ -20,7 +22,7 @@ $(document).ready(function() {
             /* If the object is completely visible in the window, fade it it */
             if (bottom_of_window >= bottom_of_object) {
 
-                $(this).animate({ 'opacity': '1' }, 1000);
+                $(this).animate({ 'opacity': '1' }, 2000);
 
             }
         });
@@ -62,6 +64,7 @@ $(document).ready(function() {
     });
 });
 
+// Hamburger Menu Open/close
 $(function() {
     var navMain = $(".main");
     navMain.on("click", "a", null, function() {
@@ -71,11 +74,10 @@ $(function() {
         $('#nav-icon3').click(function() {
             $(this).toggleClass('open');
         });
-    });
-
-    
+    });    
 });
 
+// Change Navigation color at certain window height
 $(document).ready(function() {
     var $logo = $('.animated-button');
     $(document).scroll(function() {
@@ -86,7 +88,6 @@ $(document).ready(function() {
 /*-------------------------------------------------------------------*/
 /*  Scroll to top button
 /*-------------------------------------------------------------------*/
-
 $(document).ready(function() {
     // Show or hide the sticky footer button
     $(window).scroll(function() {
@@ -104,4 +105,3 @@ $(document).ready(function() {
         $('html, body').animate({ scrollTop: 0 }, 1000);
     })
 });
-
