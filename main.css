@@ -884,5 +884,8 @@ a.resume:hover {
         width: 30px;
         height: 30px;
     }
-
+    #coffeeBtn {
+        height: 70px;
+        width: 70px;
+    }
 }
