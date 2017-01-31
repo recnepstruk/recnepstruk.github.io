@@ -339,7 +339,7 @@ a.animated-button.victoria-four:hover:after {
 }
 
 #profile {
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     color: #3B4257;
     font-family: futura, sans-serif;
@@ -810,6 +810,7 @@ a.resume:hover {
     #profile p {
         text-align: left;
         width: 90%;
+        height: 100%;
     }
     #skills p {
         text-align: left;
@@ -843,6 +844,10 @@ a.resume:hover {
     .mylogo {
         height: 150px;
         width: 190px;
+        float: left;
+    }
+    #profile {
+        height: 100%;
     }
 }
 
@@ -876,4 +881,5 @@ a.resume:hover {
         width: 30px;
         height: 30px;
     }
+
 }
