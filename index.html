@@ -10,13 +10,15 @@
     <script src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
     <script src="dist/morphext.js"></script>
     <script src="jquery.countTo.js"></script>
-<!--     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
- -->    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <!--     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+ -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="dist/morphext.css">
-<!--     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
- -->    <!-- Bootstrap CSS -->
+    <!--     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+ -->
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
     <!-- Main CSS -->
     <link rel="stylesheet" href="loading.css">
@@ -37,7 +39,7 @@
             <!-- <img src="" width="60" height="60" id="mylogo"></a> -->
             <div class="col-md-2 col-sm-2 col-md-offset-1"> <a href="#profile" id="colorChange" class="btn btn-sm animated-button victoria-one">About Me</a> </div>
             <div class="col-md-2 col-sm-2"> <a href="#section1" id="colorChange" class="btn btn-sm animated-button victoria-two">Projects</a> </div>
-            <div class="col-md-2 col-sm-2"> <a href="#photography" id="colorChange" class="btn btn-sm animated-button victoria-four">Photography</a> </div>
+            <div class="col-md-2 col-sm-2"> <a href="#photography" id="colorChange" class="btn btn-sm animated-button victoria-four">Side Hobby</a> </div>
             <div class="col-md-2 col-sm-2"> <a href="#skills" id="colorChange" class="btn btn-sm animated-button victoria-three">Skills</a> </div>
             <div class="col-md-2 col-sm-2"> <a href="#contact" id="colorChange" class="btn btn-sm animated-button victoria-four">Contact</a> </div>
         </div>
@@ -45,7 +47,7 @@
         <div class="intro">
             <div id="mainTitle">Kurt Spencer
                 <br>
-                <span id="js-rotating" class="morphext animated infinite">Developer, Full Stack, Photographer, Web Designer, Innovator</span>
+                <span id="js-rotating" class="morphext animated infinite">Developer, Full Stack, Web Designer, Innovator</span>
             </div>
             <!-- Who Am I Button -->
             <a href="#profile" class="button startScrollBtn" id="startScroll" style="color: #f2f2f2; text-decoration: none;">Who am I?</a>
@@ -96,30 +98,42 @@
         <h1 id="profileTitle">ABOUT ME</h1>
         <div id="profileSpacer"></div>
         <!-- <h3>/////////////////////DO NOT CROSS        Under Construction        DO NOT CROSS/////////////////////</h3> -->
-        <img src="./img/kurtlogo.png" class="col-md-4 col-md-2 hideme mylogo">
-        <p class="col-md-8 col-sm-2">I'm a self taught programmer and photographer with a professional web development education from RefactorU. I have a high passion for visual design and building fully responsive web products. As a full stack developer, I utilize MongoDB, Express.js, Angular.js, and Node.js for all my web and web-app building. It is safe to say I am a lean, MEAN, coding machine.
-            
-            My top five traits:
-            Initiative,
-            Innovation,
-            Zeal,
-            Focus,
-            Passion!
+        <img src="./img/kurtlogo.png" class="col-md-2 col-sm-2 hideme mylogo">
+        <p class="col-md-4 col-sm-10">Welcome to my page! I'm a full-stack web developer and photographer with a high passion for <span style="background-color:rgba(32, 184, 134, .3);">visual design</span> and building fully responsive web products. As a full stack developer, I utilize <span style="background-color:rgba(32, 184, 134, .3);">Javasript</span> with <span style="background-color:rgba(32, 184, 134, .3);">MongoDB</span>, <span style="background-color:rgba(32, 184, 134, .3);">Express</span>, <span style="background-color:rgba(32, 184, 134, .3);">Angular</span>, and <span style="background-color:rgba(32, 184, 134, .3);">Node</span> for creating beautiful user friendly websites to capture your audiences attention. <br>Let's create!
         </p>
+        <div class="col-md-6 col-sm-12 text-center traits">
+            <h3 style="margin-top: 0;">My Top Traits</h3>
+            <div class="col-md-12 col-sm-3" style="background-color: #efa4a2;">
+                <!-- <img src="img/gmail.png"> -->
+                Initiative
+            </div>
+            <div class="col-md-12 col-sm-3" style="background-color: #e59492;">
+                <!-- <img src="img/gmail.png"> -->
+                Innovation
+            </div>
+            <div class="col-md-12 col-sm-3" style="background-color: #dd706e;">
+                <!-- <img src="img/gmail.png"> -->
+                Creativity
+            </div>
+            <div class="col-md-12 col-sm-3" style="background-color: #D64541;">
+                <!-- <img src="img/gmail.png"> -->
+                Passion
+            </div>
+        </div>
     </div>
     <!-- 3D Project Boxes -->
     <div class="projectWrapper" id="section1">
         <div id="projectsBorder"></div>
         <h1 id="projectsTitle">PROJECTS</h1>
         <div id="projectsSpacer"></div>
-        <div class='wrapper hideme'>
+        <div class='wrapper'>
             <div class='container2'>
                 <a>
                     <div class='box_front box_front1'>
                     </div>
                 </a>
                 <div class='box_bottom'>
-                    <p style="font-size: 40px;">Eur-Tune</br>
+                    <p style="font-size: 25px;">Eur-Tune</br>
                         <a href="#section1" style="text-decoration: none;">
                             <p style="font-size: 16px;">View Project</p>
                         </a>
@@ -127,14 +141,14 @@
                 </div>
             </div>
         </div>
-        <div class='wrapper hideme'>
+        <div class='wrapper'>
             <div class='container2'>
                 <a>
                     <div class='box_front box_front2'>
                     </div>
                 </a>
                 <div class='box_bottom'>
-                    <p style="font-size: 40px;">Omega 3 Studios</br>
+                    <p style="font-size: 25px;">Omega 3 Studios</br>
                         <a href="#section1" style="text-decoration: none;">
                             <p style="font-size: 16px;">View Project</p>
                         </a>
@@ -142,14 +156,14 @@
                 </div>
             </div>
         </div>
-        <div class='wrapper hideme'>
+        <div class='wrapper'>
             <div class='container2'>
                 <a>
                     <div class='box_front box_front3'>
                     </div>
                 </a>
                 <div class='box_bottom'>
-                    <p style="font-size: 40px;">Knight Rider</br>
+                    <p style="font-size: 25px;">Knight Rider</br>
                         <a href="#section1" style="text-decoration: none;">
                             <p style="font-size: 16px;">View Project</p>
                         </a>
@@ -157,29 +171,29 @@
                 </div>
             </div>
         </div>
-        <div class='wrapper hideme'>
+        <div class='wrapper'>
             <div class='container2'>
                 <a>
                     <div class='box_front box_front4'>
                     </div>
                 </a>
                 <div class='box_bottom'>
-                    <p style="font-size: 40px;">Interactive Blinds</br>
-                        <a href="#section1" style="text-decoration: none;">
+                    <p style="font-size: 25px;">Interactive Blinds</br>
+                        <a href="http://codepen.io/cloudborn/pen/VmqxjQ" style="text-decoration: none;">
                             <p style="font-size: 16px;">View Project</p>
                         </a>
                     </p>
                 </div>
             </div>
         </div>
-        <div class='wrapper hideme'>
+        <div class='wrapper'>
             <div class='container2'>
                 <a>
                     <div class='box_front box_front5'>
                     </div>
                 </a>
                 <div class='box_bottom'>
-                    <p style="font-size: 40px;">Weather App</br>
+                    <p style="font-size: 25px;">Weather App</br>
                         <a href="#section1" style="text-decoration: none;">
                             <p style="font-size: 16px;">View Project</p>
                         </a>
@@ -187,7 +201,7 @@
                 </div>
             </div>
         </div>
-        <div class='wrapper hideme'>
+        <div class='wrapper'>
             <div class='container2'>
                 <a>
                     <div class='box_front box_front6'>
@@ -195,7 +209,39 @@
                     </div>
                 </a>
                 <div class='box_bottom'>
-                    <p style="font-size: 40px;">My Portfolio</br>
+                    <p style="font-size: 25px;">My Portfolio</br>
+                        <a href="#section1" style="text-decoration: none;">
+                            <p style="font-size: 16px;">View Project</p>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class='wrapper'>
+            <div class='container2'>
+                <a>
+                    <div class='box_front box_front7'>
+                        <!-- <p id="comingSoon">Coming Soon!</p> -->
+                    </div>
+                </a>
+                <div class='box_bottom'>
+                    <p style="font-size: 25px;">KB Portfolio</br>
+                        <a href="#section1" style="text-decoration: none;">
+                            <p style="font-size: 16px;">View Project</p>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class='wrapper'>
+            <div class='container2'>
+                <a>
+                    <div class='box_front box_front8'>
+                        <p id="comingSoon">Coming Soon</p>
+                    </div>
+                </a>
+                <div class='box_bottom'>
+                    <p style="font-size: 25px;">Coming Soon</br>
                         <a href="#section1" style="text-decoration: none;">
                             <p style="font-size: 16px;">View Project</p>
                         </a>
@@ -206,10 +252,11 @@
     </div>
     <!-- Photography Section -->
     <div id="photography">
-        <h1>PHOTOGRAPHY</h1>
+        <h1>SIDE HOBBY</h1>
         <!-- <div id="skillsSpacer"></div> -->
         <!-- SnapWidget -->
-        <iframe src="https://snapwidget.com/embed/317202" class="snapwidget-widget hideme" allowTransparency="true" frameborder="0" scrolling="no"></iframe>
+        <iframe src="https://snapwidget.com/embed/317202" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no"></iframe>
+        <p class="text-center" style="margin-top: 20px;">Photography is my favorite passtime. I love capturing the beauty of the world for those who cannot travel as far.</p>
     </div>
     <!-- Skills Section -->
     <div id="skills">
@@ -220,7 +267,7 @@
             <br>Other: Lightroom, Photoshop</p>
         <!-- MILESTONES SECTION START -->
         <section id="milestones" class="section">
-            <div class="container-fluid section-wrapper hideme">
+            <div class="container-fluid section-wrapper">
                 <div class="section-content">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 text-center">

@@ -8,6 +8,7 @@ body {
     margin: 0px;
     font-family: futura, sans-serif;
     /*padding-top: 70px;*/
+    overflow: hidden;
 }
 
 
@@ -116,6 +117,7 @@ span.icon {
     width: 100%;
     margin: auto;
     padding-bottom: 10px;
+    /*background-color: rgba(59, 66, 87, 0.9);*/
 }
 
 
@@ -339,7 +341,7 @@ a.animated-button.victoria-four:hover:after {
 }
 
 #profile {
-    height: 70vh;
+    height: 100vh;
     width: 100%;
     color: #3B4257;
     font-family: futura, sans-serif;
@@ -347,27 +349,16 @@ a.animated-button.victoria-four:hover:after {
     padding-top: 73px;
 }
 
-#profile h3 {
-    background-color: yellow;
-    padding: 10px;
-    height: auto;
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    transform: rotateZ(25deg);
-    position: relative;
-    top: 30%;
-    z-index: 1;
-}
-
-#profile h3:hover {
-    transform: rotateZ(0deg);
-}
-
 #profile p {
     margin: auto;
-    width: 70%;
-    height: 200px;
+    /*font-family: Helvetica;*/
+}
+.traits {
+    font-family: Helvetica;
+}
+.traits div {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 
@@ -421,6 +412,7 @@ a.animated-button.victoria-four:hover:after {
     text-align: center;
     color: #3B4257;
     padding-top: 73px;
+    /*height: 100%;*/
 }
 
 .wrapper {
@@ -432,8 +424,10 @@ a.animated-button.victoria-four:hover:after {
 
 .container2 {
     display: block;
-    width: 500px;
-    height: 295px;
+    /*500*/
+    width: 300px;
+    /*295*/
+    height: 200px;
     max-width: 80vw;
     margin: 0px auto;
     text-align: center;
@@ -485,15 +479,16 @@ a:hover {
 }
 
 /*Add to projects not ready yet*/
-/*#comingSoon {
+#comingSoon {
     font-size: 2.8vw;
     position: relative;
     transform: translateY(-50%);
     top: 35%;
     left: 1%;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
-*/
+
 .container2:hover {
     -webkit-transform: rotateX(90deg) translateZ(125px);
     -moz-transform: rotateX(90deg) translateZ(125px);
@@ -545,6 +540,18 @@ a:hover {
 
 .box_front6 {
     background-image: url('./img/portfolio.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.box_front7 {
+    background-image: url('./img/kbportfolio.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.box_front8 {
+    background-image: url('./img/macbook.jpg');
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -848,6 +855,17 @@ a.resume:hover {
     }
     #profile {
         height: 100%;
+    }
+    #profile p {
+        margin: auto;
+        border-right: none;
+    }
+    .traits {
+        margin-top: 20px;
+    }
+    .traits {
+    font-family: Helvetica;
+    border-left: none;
     }
 }
 
