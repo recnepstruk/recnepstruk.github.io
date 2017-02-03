@@ -409,6 +409,7 @@ a.animated-button.victoria-four:hover:after {
 .projectWrapper {
     position: relative;
     margin: 0 auto;
+    height: 100vh;
     text-align: center;
     color: #3B4257;
     padding-top: 73px;
