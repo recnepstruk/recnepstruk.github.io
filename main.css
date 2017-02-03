@@ -594,7 +594,7 @@ a:hover {
 *******************************************************************/
 
 #skills {
-    height: 100%;
+    height: 100vh;
     width: 70%;
     font-family: futura, sans-serif;
     text-align: center;
@@ -826,6 +826,12 @@ a.resume:hover {
     }
     #photography iframe {
     width: 90vw; 
+    }
+    #skills {
+    height: 100%;
+    }
+    .projectWrapper {
+    height: auto;
     }
 }
 
