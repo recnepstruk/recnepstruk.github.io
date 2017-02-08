@@ -328,6 +328,7 @@ a.animated-button.victoria-four:hover:after {
 
 .button:focus {
     text-transform: uppercase
+    outline: none;
 }
 
 
