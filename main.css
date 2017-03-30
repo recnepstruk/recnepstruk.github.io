@@ -413,7 +413,7 @@ a.animated-button.victoria-four:hover:after {
     height: 100vh;
     text-align: center;
     color: #3B4257;
-    /*padding-top: 73px;*/
+    padding-top: 73px;
     /*height: 100%;*/
 }
 
@@ -714,11 +714,15 @@ a:hover {
     display: block;
     text-align: center;
     height: 100vh;
-    width: 100%;
     position: relative;
     font-family: futura, sans-serif;
     padding-top: 73px;
-    background-color: rgba(32, 184, 134, .5);
+    background-image: url('./img/compglasses.jpg');
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    background-size: cover;
+    background-position: 30%;
+    max-width: 100%;
 }
 
 #contactContain {
@@ -874,6 +878,9 @@ a.resume:hover {
     .traits {
     font-family: Helvetica;
     border-left: none;
+    }
+    #contact {
+        background-position: 45%;
     }
 }
 
